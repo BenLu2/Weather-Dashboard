@@ -1,0 +1,49 @@
+#weatherContainer{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 1300px;
+    border: 5px solid rgba(26, 40, 160, 0.829);    
+    border-radius: 10px;
+}
+
+#iconsContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 240px;
+    width: 1200px;    
+    border-radius: 10px;
+}
+
+.icons{
+    display: inline-bock;
+    float: left;
+    height: 200px;
+    width: 190px;
+    margin: 20px;
+    border: 5px solid rgb(21, 18, 194);
+    border-radius: 10px;
+}
+
+.image{
+    height: 140px;
+    width: 100%;
+}
+
+.imgClass{
+    height: 140px;
+    width: 100%;
+}
+
+.weather{
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
