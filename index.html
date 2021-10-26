@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/materia/bootstrap.min.css" integrity="sha384-B4morbeopVCSpzeC1c4nyV0d0cqvlSAfyXVfrPJa25im5p+yEN/YmhlgQP/OyMZD" crossorigin="anonymous">  <head>
-    <meta charset="UTF-8" />
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <title>Weather Dashboard</title>
   </head>
   <body>
@@ -66,7 +66,7 @@
     "Minneapolis",
     
     ];
-    $( "#tags" ).autocomplete({
+    $( "#cityInput" ).autocomplete({
       source: availableTags
     });
   } );
@@ -74,9 +74,11 @@
           <div class="container searchContainer">
             <div class="search card card-body">
                 <h1>Search for a city</h1>
-                <p class="lead">Enter Your City</p>
-                <label for="tags">Tags: </label>
-                <input type="text" id="tags" class="form-control" placeholder="San Diego">
+                <p class="ui-widget">Enter Your City</p>
+                <!-- <label for="tags">City Name: </label> -->
+                <!-- <input type="text" id="tags" class="cityInput" placeholder="San Diego"> -->
+                <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+                <h2 id="cityName"> </h2>
             </div>
     <!-- <div class="form-control">
         <label for="tags">Tags: </label>
@@ -86,9 +88,45 @@
             <div id="profile"></div>
         </div>
         <div class="container text-center mt-2">
-            <button class="btn btn-primary" id="submit">Search</button>
+            <button onclick="GetInfo()" class="btn btn-primary" id="submit">Search</button>
         </div>
-        
+        <div id = "weatherContainer">
+          <div id="iconsContainer">    
+              <div class = "icons">
+                  <p class="weather" id="day1"></p>
+                  <div class="image"><img src="llama.jpg" class="imgClass" id="img1"></div>
+                  <p class="minValues" id="day1Min">Minimum Temp</p>
+                  <p class="maxValues" id="day1Max">Maxmum Temp</p>
+              </div>
+              <div class = "icons">
+                  <p class="weather" id="day2"></p>
+                  <div class="image"><img src="llama.jpg" class="imgClass" id="img2"></div>
+                  <p class="minValues" id="day2Min">Minimum Temp</p>
+                  <p class="maxValues" id="day2Max">Maxmum Temp</p>
+              </div>
+              <div class = "icons">
+                  <p class="weather" id="day3"></p>
+                  <div class="image"><img src="llama.jpg" class="imgClass" id="img3"></div>
+                  <p class="minValues" id="day3Min">Minimum Temp</p>
+                  <p class="maxValues" id="day3Max">Maxmum Temp</p>
+              </div>
+              <div class = "icons">
+                  <p class="weather" id="day4"></p>
+                  <div class="image"><img src="llama.jpg" class="imgClass" id="img4"></div>
+                  <p class="minValues" id="day4Min">Minimum Temp</p>
+                  <p class="maxValues" id="day4Max">Maxmum Temp</p>
+              </div>
+              <div class = "icons">
+                  <p class="weather" id="day5"></p>
+                  <div class="image"><img src="llama.jpg" class="imgClass" id="img5"></div>
+                  <p class="minValues" id="day5Min">Minimum Temp</p>
+                  <p class="maxValues" id="day5Max">Maxmum Temp</p>
+              </div>
+          </div>
+
+          </div>
+
+        </div>
         <div id="content">
 
         </div>
