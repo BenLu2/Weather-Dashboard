@@ -24,7 +24,7 @@
 .icons{
     display: inline-bock;
     float: left;
-    height: 200px;
+    height: 180px;
     width: 190px;
     margin: 20px;
     border: 5px solid rgb(21, 18, 194);
@@ -32,7 +32,7 @@
 }
 
 .image{
-    height: 140px;
+    height: 160px;
     width: 100%;
 }
 
@@ -46,4 +46,14 @@
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+    background: grey;
 }
